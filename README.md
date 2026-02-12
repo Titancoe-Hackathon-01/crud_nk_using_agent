@@ -34,10 +34,16 @@ pip install -r requirements.txt
 
 3. Run the application:
 ```bash
+# Development mode (with debugging)
+FLASK_DEBUG=true python app.py
+
+# Production mode (recommended)
 python app.py
 ```
 
 The API will be available at `http://localhost:5000`
+
+> **Security Note**: The application runs in production mode by default (debug=False). Only enable debug mode during development by setting the `FLASK_DEBUG=true` environment variable.
 
 ## API Endpoints
 
