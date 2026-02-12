@@ -264,7 +264,7 @@ sequenceDiagram
 
 | Operation | Target | Acceptable | Notes |
 |-----------|--------|------------|-------|
-| GET /health | < 10ms | < 50ms | Health check must be fast |
+| GET /health | < 50ms | < 100ms | Health check must be fast |
 | POST /employees | < 50ms | < 200ms | Includes validation |
 | GET /employees | < 100ms | < 500ms | Depends on dataset size |
 | GET /employees/{id} | < 20ms | < 100ms | Direct lookup |
